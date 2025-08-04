@@ -63,7 +63,7 @@ Se piden dos valores numéricos (float) usando `input()`, uno para **X** y otro 
 
 ## Reflexiones del Desarrollo
 
-* 💬 **Validaciones**: Fue fundamental validar las entradas del usuario para evitar errores de ejecución, como cadenas vacías o valores no numéricos.
+* **Validaciones**: Fue fundamental validar las entradas del usuario para evitar errores de ejecución, como cadenas vacías o valores no numéricos.
 * **Lógica Condicional**: La práctica refuerza el uso de estructuras `if-elif-else`, esenciales para la toma de decisiones en programación.
 * **Pruebas**: Se probaron varios casos extremos (palabras vacías, números cero, entradas no numéricas) para garantizar la robustez del programa.
 * **Mantenimiento**: El código está estructurado en funciones reutilizables, facilitando su mantenimiento o ampliación futura.
