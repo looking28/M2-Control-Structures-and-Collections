@@ -1,80 +1,81 @@
 # M2-Control-Structures-and-Collections
-# Evaluador de Palabras y Coordenadas
 
-Este programa en Python realiza dos funciones principales:
+# Word and Coordinates Evaluator
 
-1. **Evalúa la longitud de una palabra ingresada por el usuario.**
-2. **Determina en qué cuadrante del plano cartesiano se encuentra un punto dado por sus coordenadas (X, Y).**
+This Python program performs two main functions:
 
----
-
-## Estructura del Programa
-
-El código está dividido en dos secciones principales:
+1. **Evaluates the length of a word entered by the user.**
+2. **Determines which quadrant of the Cartesian plane a point lies in, based on its coordinates (X, Y).**
 
 ---
 
-### 1. Verificación de la longitud de una palabra
+## Program Structure
 
-#### Función utilizada:
+The code is divided into two main sections:
+
+---
+
+### 1. Word Length Verification
+
+#### Function used:
 
 ```python
 def word_length(word):
 ```
 
-#### Lógica:
+#### Logic:
 
-* Si la palabra tiene entre **4 y 8 letras**, se considera **correcta**.
-* Si tiene **menos de 4 letras**, se indica que **faltan letras**.
-* Si tiene **más de 8 letras**, se informa que tiene **demasiadas letras**.
-* Si el usuario no ingresa nada (una cadena vacía), se muestra un mensaje de error.
+* If the word has between **4 and 8 letters**, it is considered **correct**.
+* If it has **fewer than 4 letters**, it indicates that **letters are missing**.
+* If it has **more than 8 letters**, it reports that there are **too many letters**.
+* If the user doesn't enter anything (an empty string), an error message is displayed.
 
-####  Entrada:
+#### Input:
 
-Solicita al usuario una palabra a través de `input()`.
+It asks the user for a word using `input()`.
 
 ---
 
-### 2. Determinación de cuadrante
+### 2. Quadrant Determination
 
-#### Función utilizada:
+#### Function used:
 
 ```python
 def determine_quadrant(x, y):
 ```
 
-#### Lógica:
+#### Logic:
 
-* Cuadrante I: x > 0 y y > 0
-* Cuadrante II: x < 0 y y > 0
-* Cuadrante III: x < 0 y y < 0
-* Cuadrante IV: x > 0 y y < 0
-* Si **x o y son cero**, el punto **no está en ningún cuadrante**.
+* Quadrant I: x > 0 and y > 0
+* Quadrant II: x < 0 and y > 0
+* Quadrant III: x < 0 and y < 0
+* Quadrant IV: x > 0 and y < 0
+* If **x or y is zero**, the point **is not located in any quadrant**.
 
-#### Entrada:
+#### Input:
 
-Se piden dos valores numéricos (float) usando `input()`, uno para **X** y otro para **Y**.
+The program asks for two numerical values (floats) using `input()`, one for **X** and one for **Y**.
 
-#### Manejo de errores:
+#### Error Handling:
 
-* Se incluye un bloque `try-except` para capturar errores si el usuario no introduce números válidos.
-
----
-
-## Reflexiones del Desarrollo
-
-* **Validaciones**: Fue fundamental validar las entradas del usuario para evitar errores de ejecución, como cadenas vacías o valores no numéricos.
-* **Lógica Condicional**: La práctica refuerza el uso de estructuras `if-elif-else`, esenciales para la toma de decisiones en programación.
-* **Pruebas**: Se probaron varios casos extremos (palabras vacías, números cero, entradas no numéricas) para garantizar la robustez del programa.
-* **Mantenimiento**: El código está estructurado en funciones reutilizables, facilitando su mantenimiento o ampliación futura.
+* A `try-except` block is used to catch errors if the user does not enter valid numeric values.
 
 ---
 
-## Cómo Ejecutar el Programa
+## Development Reflections
 
-1. Asegúrate de tener Python instalado (versión 3.x).
-2. Copia el código en un archivo llamado `evaluador.py`.
-3. Ejecuta el programa en la terminal o consola:
+* **Validation**: Input validation was essential to prevent runtime errors, such as empty strings or non-numeric values.
+* **Conditional Logic**: This task reinforces the use of `if-elif-else` structures, which are crucial in decision-making.
+* **Testing**: Various edge cases (empty input, zeros, non-numeric entries) were tested to ensure the program is robust.
+* **Maintainability**: The code is modular and organized in reusable functions, which makes it easier to maintain and expand in the future.
+
+---
+
+## How to Run the Program
+
+1. Make sure you have Python installed (version 3.x).
+2. Copy the code into a file named `evaluador.py`.
+3. Run the program in your terminal or command line:
 
 ```bash
 python evaluador.py
